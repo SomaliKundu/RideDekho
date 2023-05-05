@@ -1,0 +1,149 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #b62020;
+    font-family: Arial, sans-serif;
+    padding-top: 50px; /* Added padding from top */
+    padding-bottom: 50px; /* Added padding from bottom */
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Form Styles */
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    padding: 20px; /* Added padding to container */
+  }
+  
+  .text {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form {
+    padding: 20px;
+  }
+  
+  .data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #333;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .field-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .field-textarea {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    position: relative;
+  }
+  
+  .inner {
+    background-color: #333;
+    border-radius: 10px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .signup-link a:hover {
+    text-decoration: underline;
+}

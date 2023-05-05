@@ -1,0 +1,179 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #f0f0f0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 33.33%;
+    margin: 20px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    background-color: rgba(255, 76, 104, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.img-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+img {
+    display: block;
+    width: 33%;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #ff4c68;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #ef8172;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4c68;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
+.bike_top, .bike_last {
+    background-color: #ff4c68;
+    color: white;
+    padding: 4% 10%;
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    top: 0;
+    left: -100%;
+    transition: all 0.3s ease;
+  }
+  
+  /* .btn:hover .inner {
+    left: 0;
+  } */
+  
+  button[type="submit"] {
+    background-color: #333;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 12px 20px;
+      /* margin-top: 20px; */
+      position: relative;
+      z-index: 1;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
